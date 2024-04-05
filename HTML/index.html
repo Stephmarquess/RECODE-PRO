@@ -1,142 +1,484 @@
-<!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="./CSS/index.css">
-  <title>GoTour - Home </title>
-</head>
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img id="logo" src="./IMAGENS/logo.png"/> <span id="logotxt"> <b>G</b>o<b>T</b>our</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./promocoes.html">Promoções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./destinos.html">Destinos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./contato.html">Contato</a>
-            </li>
+    <title>GoTour - Home</title>
+  </head>
 
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><img src="./IMAGENS/lupa.png"
-                alt="icone de lupa para pesquisa" height="20px"></button>
-          </form>
+  <body>
+    <header>
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+      <nav class="site-nav">
+        <div class="container">
+          <div class="site-navigation">
+            <img id="logo" src="./assets/img/logo.png" height="50px" width="50px" /><a
+              href="index.html"
+              class="logo m-0"
+              >GoTour</a
+            >
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right"
+            >
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="./promocoes.html">Promoções</a></li>
+              <li><a href="./destinos.html">Destinos</a></li>
+              <li><a href="./contato.html">Contatos</a></li>
+              
+            </ul>
+
+            <a
+              href="#"
+              class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="intro-wrap">
+                <h1 class="mb-5"><span class="d-block">Venha conhecer</span> <span class="typed-words"></span></h1>    
+                <div class="row">
+                  <div class="col-12">
+                    <form class="form">
+                      <div class="row mb-2 flex-md-column align-items-center">
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-8">
+                          <input class="form-control mt-3" type="text" name="local" id="local" placeholder="Pesquise um destino"><br>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">											
+                          <input type="text" class="form-control" name="daterange">											
+                        </div>
+                      </div>    
+                      <div class="row align-items-center justify-content-center mt-3">
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                          <input type="submit" class="btn btn-primary btn-block" value="Pesquisar">
+                        </div>										
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="slides">
+                <img src="assets/img/hero-slider-1.jpg" alt="Image" class="img-fluid active">
+                <img src="assets/img/hero-slider-2.jpg" alt="Image" class="img-fluid">
+                <img src="assets/img/hero-slider-3.jpg" alt="Image" class="img-fluid">
+                <img src="assets/img/hero-slider-4.jpg" alt="Image" class="img-fluid">
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <main class="container">
-
-    <section id="inicio">
-
-      <h2 class="mt-5">Onde você quer se aventurar?</h2>
-      <div class="passagem">
-        <input class="form-control mt-3" type="text" name="local" id="local" placeholder="Pesquise um destino"><br>
-        <form>
-          <div class="form-align">
-            <label> Data de Ida </label>
-            <input class="input-control" type="date" name="dataIda" id="dataIda">
-          </div>
-
-          <div class="form-align">
-            <label> Data de Volta </label>
-            <input class="input-control" type="date" name="dataVolta" id="dataVolta"><br>
-          </div>
-        </form>
-        <button class="btn btn-primary mt-5 mb-5" type="submit">Buscar</button>
-      </div>
-
     </section>
-
-
+    
+    <section id="servicos">
+      <div class="untree_co-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 class="section-title text-center mb-3">Nossos Serviços</h2>
+              
+            </div>
+          </div>
+          <div class="row align-items-stretch">
+            <div class="col-lg-4 order-lg-1">
+              <div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('./assets/img/hero-slider-1.jpg');"></div></div></div>
+            </div>
+    
+            <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+    
+              <div class="feature-1 d-md-flex">
+                <div class="align-self-center">
+                  <span><img src="./assets/img/tradutor.png" height="65px" width="65px"></span>
+                  <h3>Tradutor</h3>
+                  <p class="mb-0">Tradutores disponíveis a qualquer momento em viagens internacionais</p>
+                </div>
+              </div>
+    
+              <div class="feature-1 ">
+                <div class="align-self-center">
+                  <link rel="shortcut icon" href="favicon.png">
+                  <span><img src="assets/img/carro.png" height="65px" width="65px"></span>
+                  <h3>Transfer</h3>
+                  <p class="mb-0"> Transporte para deslocamento caso necessite em sua viagem </p>
+                </div>
+              </div>
+    
+            </div>
+    
+            <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+    
+              <div class="feature-1 d-md-flex">
+                <div class="align-self-center">							
+                  <span class="icon-tag display-4 text-primary"></span>
+                  <h3>Descontos Exclusivos</h3>
+                  <p class="mb-0"> Parceiros exclusivos oferecendo os melhores preços do mercado</p>
+                </div>
+              </div>
+    
+              <div class="feature-1 d-md-flex">
+                <div class="align-self-center">
+                  <span class="flaticon-phone-call display-4 text-primary"></span>
+                  <h3>Suporte 24/7</h3>
+                  <p class="mb-0">Temos um time de especialistas prontos para te atender em qualquer ocasião</p>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section id="destinos">
-      <div class="row mt-5">
-        <div class="col-lg-6 col-sm-12" id="nacional">
-          <h3 class="titulo-secao">Destinos Nacionais</h3>
-          <a href="./destinos.html"><button type="button" class="btn btn-warning">Conferir</button></a>
-
-        </div>
-        <div class="col-lg-6 col-sm-12" id="internacional">
-          <h3 class="titulo-secao">Destinos Internacionais</h3>
-          <a href="./destinos.html"><button type="button" class="btn btn-warning">Conferir</button></a>
+      <div class="untree_co-section">
+        <div class="container">
+          <div class="row text-center justify-content-center mb-5">
+            <div class="col-lg-7"><h2 class="section-title text-center">Destinos populares</h2></div>
+          </div>
+    
+          <div class="owl-carousel owl-3-slider">
+    
+            <div class="item">
+              <a class="media-thumb" href="./assets/img/hero-slider-1.jpg" data-fancybox="gallery">
+                <div class="media-text">
+                  <h3 class="badge bg-primary text-wrap text-white"> Aspen, Estados Unidos</h3>							
+                </div>
+                <img src="./assets/img/hero-slider-1.jpg" alt="Image" class="img-fluid">
+              </a> 
+            </div>
+    
+            <div class="item">
+              <a class="media-thumb" href="./assets/img/hero-slider-2.jpg" data-fancybox="gallery">
+                <div class="media-text">
+                  <h3 class="badge bg-primary text-wrap text-white">Bariloche, Argentina</h3>							
+                </div>
+                <img src="./assets/img/hero-slider-2.jpg" alt="Image" class="img-fluid">
+              </a> 
+            </div>
+    
+            <div class="item">
+              <a class="media-thumb" href="./assets/img/hero-slider-3.jpg" data-fancybox="gallery">
+                <div class="media-text">
+                  <h3 class="badge bg-primary text-wrap text-white">Santiago, Chile</h3>							
+                </div>
+                <img src="./assets/img/hero-slider-3.jpg" alt="Image" class="img-fluid">
+              </a> 
+            </div>
+    
+    
+            <div class="item">
+              <a class="media-thumb" href="./assets/img/hero-slider-4.jpg" data-fancybox="gallery">
+                <div class="media-text">
+                  <h3 class="badge bg-primary text-wrap text-white">Pelourinho - Salvador, Brasil</h3>						
+                </div>
+                <img src="./assets/img/hero-slider-4.jpg" alt="Image" class="img-fluid">
+              </a> 
+            </div>
+    
+            <div class="item">
+              <a class="media-thumb" href="./assets/img/hero-slider-5.jpg" data-fancybox="gallery">
+                <div class="media-text">
+                  <h3 class="badge bg-primary text-wrap text-white">Londres, Inglaterra</h3>							
+                </div>
+                <img src="./assets/img/hero-slider-5.jpg" alt="Image" class="img-fluid">
+              </a> 
+            </div>
+    
+            <div class="item">
+              <a class="media-thumb" href="./assets/img/hero-slider-1.jpg" data-fancybox="gallery">
+                <div class="media-text">
+                  <h3 class="badge bg-primary text-wrap text-white">Sevilha, Espanha</h3>							
+                </div>
+                <img src="./assets/img/hero-slider-6.jpg" alt="Image" class="img-fluid">
+              </a> 
+            </div>
+          </div>
+        </div>		
+      </div>
+      <div class="d-flex justify-content-center"> 
+      <a href="destinos.html" class="btn btn-primary btn btn-outline-white text-white">Destinos</a>
+    </div>
+    </section>
+    
+    <section id="promocoes">
+      <div class="untree_co-section">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-6">
+              <h2 class="section-title text-center mb-3">Promoções</h2>
+              <p> Pacotes com descontos exclusivos que cabem no seu bolso </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="media-1">
+                <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-1.jpg" alt="Image" class="img-fluid"></a>
+                <span class="d-flex align-items-center loc mb-2">
+                  <span class="icon-room mr-3"></span>
+                  <span>Estados Unidos</span>
+                </span>
+                <div class="d-flex flex-column">
+                  <div>
+                    <h3><a href="#">Aspen</a></h3>
+                    <div class="price ml-auto">
+                      <span>R$4.500,00</span>
+                    </div>
+                  </div>	
+                  <div> 
+                    <a href="./"><button class="btn btn-primary mt-3 d-flex justify-content-center"> Ver detalhes </button></a>
+                  </div>													
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="media-1">
+                <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-2.jpg" alt="Image" class="img-fluid"></a>
+                <span class="d-flex align-items-center loc mb-2">
+                  <span class="icon-room mr-3"></span>
+                  <span>Argentina</span>
+                </span>
+                <div class="d-flex flex-column">
+                  <div>
+                    <h3><a href="#">Bariloche</a></h3>
+                    <div class="price ml-auto">
+                      <span>R$1.500.00</span>
+                    </div>
+                  </div>
+                  <div> 
+                    <a href="#"><button class="btn btn-primary mt-3 d-flex justify-content-center"> Ver detalhes </button></a>
+                  </div>													
+    
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="media-1">
+                <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-3.jpg" alt="Image" class="img-fluid"></a>
+                <span class="d-flex align-items-center loc mb-2">
+                  <span class="icon-room mr-3"></span>
+                  <span>Chile</span>
+                </span>
+                <div class="d-flex flex-column">
+                  <div>
+                    <h3><a href="#">Santiago</a></h3>
+                    <div class="price ml-auto">
+                      <span>R$3.200,00</span>
+                    </div>
+                  </div>
+                  <div> 
+                    <a href="#"><button class="btn btn-primary mt-3 d-flex justify-content-center"> Ver detalhes </button></a>
+                  </div>													
+    
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="media-1">
+                <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-4.jpg" alt="Image" class="img-fluid"></a>
+    
+                <span class="d-flex align-items-center loc mb-2">
+                  <span class="icon-room mr-3"></span>
+                  <span>Brasil</span>
+                </span>
+    
+                <div class="d-flex flex-column">
+                  <div>
+                    <h3><a href="#">Pelourinho</a></h3>
+                    <div class="price ml-auto">
+                      <span>R$1.600,00</span>
+                    </div>
+                  </div>
+                  <div> 
+                    <a href="#"><button class="btn btn-primary mt-3 d-flex justify-content-center"> Ver detalhes </button></a>
+                  </div>													
+    
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <section id="newsletter">
-      <div class="row">
-        <div class="col-lg-12 col-sm-12 d-flex flex-column justify-content-center">
-          <img src="./IMAGENS/e-mail.png" alt="">
-          <h3>Newsletter</h3>
-          <p> Receba as novidades e promoções de viagem em primeira mão!</p>
-          <form action="form-newsletter" class="d-flex justify-content-center">
-            <input class="form-control w-50" type="email" name="email" id="email-newsletter" placeholder="Digite o seu e-mail"><br>
-            <button class="btn btn-primary ms-3" type="submit">Registrar</button>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="painel-parceiros">
-      <div class="row" id="parceiros">
-        <h3 class="titulo-secao">Nossos Parceiros</h3>
-        <div class="col-lg-12 col-sm-12" id="img-parc">
-          <img src="./IMAGENS/airbnb.png" alt="Logo do parceiro Air BnB">
-          <img src="./IMAGENS/flyEmirates.png" alt="Logo do parceiro Air BnB">
-          <img src="./IMAGENS/localiza.png" alt="Logo do parceiro Localiza (Aluguel de Carros)">
-          <img src="./IMAGENS/allianzseguros.png" alt="Logo do parceiro Allianz Seguros de Viagem">
+    
+      <div class="py-5 cta-section">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <h2 class="mb-2 text-white">Realize sua viagem dos sonhos. Contate-nos</h2>
+              <div class="d-flex justify-content-center"> 
+                <a href="./contato.html"><button class="btn btn-primary btn btn-outline-white text-white"> Contato </button></a>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="row row-cols-1 row-cols-md-3 g-3" id="rodape">
-    <div class="col">
-      <img id="logo" src="./IMAGENS/logo.png" /><span id="logotxt"> <b>G</b>o<b>T</b>our</span>
-    </div>
-    <div id="social" class="col">
-      <img src="./IMAGENS/instagram.png">
-      <img src="./IMAGENS/facebook_174848.png">
-
-    </div>
-
-    <div id="local" class="col">
-      <img src="./IMAGENS/pinodelocalizacao.png" alt="ícone de localização da empresa">
-      <p>Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</p>
-    </div>
-  </footer>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+    
+      <footer class="site-footer">
+      
+        <div class="inner first">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="widget">
+                  <img id="logo" src="./assets/img/logo.png" height="50px" width="50px"/><h3 class="heading">GoTour</h3>
+                  
+                </div>
+                <div class="widget">
+                  <ul class="list-unstyled social">
+                    <li><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li><a href="#"><span class="icon-instagram"></span></a></li>
+                    <li><a href="#"><span class="icon-facebook"></span></a></li>								
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-2 pl-lg-5">
+                <div class="widget">
+                  <h3 class="heading">Páginas</h3>
+                  <ul class="links list-unstyled">
+                    <li><a href="./destinos.html">Destinos</a></li>
+                    <li><a href="./promocoes.html">Promoções</a></li>
+                    <li><a href="./contato.html">Contatos</a></li>								
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-2">
+                <div class="widget">
+                  <h3 class="heading">Administrativo</h3>
+                  <ul class="links list-unstyled">								
+                    <li><a href="#">Área Staff</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="widget">
+                  <h3 class="heading">Contato</h3>
+                  <ul class="list-unstyled quick-info links">
+                    <li class="email"><a href="#">gtour@email.com.br</a></li>
+                    <li class="phone"><a href="#">+55 (11) 3749-8202</a></li>
+                    <li class="address"><a href="#">Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+        <div class="inner dark">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                <p>Desenvolvido por: Stéfany Marques <a href="mailto:stefany.marques06@gmail.com"><i class="bi bi-envelope-fill"></i> </a> 
+                <a href="https://github.com/Stephmarquess"><i class="bi bi-github"></i></a>
+                <p>Template por: <a href="https://untree.co" class="link-highlight">Untree.co</a> e <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="overlayer"></div>
+      <div class="loader">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+        
+      <script src="./assets/js/jquery-3.4.1.min.js"></script>
+      <script src="./assets/js/popper.min.js"></script>
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <script src="./assets/js/owl.carousel.min.js"></script>
+      <script src="./assets/js/jquery.animateNumber.min.js"></script>
+      <script src="./assets/js/jquery.waypoints.min.js"></script>
+      <script src="./assets/js/jquery.fancybox.min.js"></script>
+      <script src="./assets/js/aos.js"></script>
+      <script src="./assets/js/moment.min.js"></script>
+      <script src="./assets/js/daterangepicker.js"></script>
+    
+      <script src="assets/js/typed.js"></script>
+      <script>
+        $(function() {
+          var slides = $('.slides'),
+          img = slides.find('img');
+    
+          img.each(function(i) {
+            $(this).attr('data-id', i + 1);
+          })
+    
+          var typed = new Typed('.typed-words', {
+            strings: ["Aspen."," Bariloche."," Santiago.", " Pelourinho."],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true,
+            preStringTyped: (arrayPos, self) => {
+              arrayPos++;
+              console.log(arrayPos);
+              $('.slides img').removeClass('active');
+              $('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+            }
+    
+          });
+        })
+      </script>
+      <script src="./assets/js/custom.js"></script>
+    
+    </body>
+    </html>
+    

@@ -1,189 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="./CSS/promocoes.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
 
-  <title>GoTour - Promoções</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="./assets/fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <title>GoTour - Promoções </title>
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img id="logo" src="./IMAGENS/logo.png" /> <span id="logotxt"> <b>G</b>o<b>T</b>our</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./promocoes.html">Promoções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./destinos.html">Destinos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Contato</a>
-            </li>
-
+	<header>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+  
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-navigation">
+          <img id="logo" src="../assets/img/logo.png" height="50px" width="50px"/><a href="index.html" class="logo m-0">GoTour <span class="text-primary">.</span></a>
+  
+          <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+            		<li><a href="index.html">Home</a></li>					
+					<li class="active"><a href="#">Promoções</a></liclass="active">
+					<li><a href="destinos.html">Destinos</a></li>
+					<li><a href="contato.html">Contatos</a></li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><img src="./IMAGENS/lupa.png"
-                alt="icone de lupa para pesquisa" height="20px"></button>
-          </form>
+  
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+  
         </div>
       </div>
     </nav>
   </header>
 
-
-
-  <div class="container">
-
-    <section id="cabecalho-secoes">
-      <div class="row" id="cabecalho">
-        <div class="col-12">
-          <h1> Promoções </h1>
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Promoções</h1>            
+          </div>
         </div>
       </div>
-    </section>
-    <hr>
+    </div>
+  </div>
 
-    <main class="secoes">
-
-      <section id="praias">
-        <h2> Que tal uma praia? </h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="praia">
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/praiabravabuzios.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> <img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Praia Brava - Buzios (Rio de Janeiro) </h5>
-
+  
+  
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-1.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Aspen - Estados Unidos </a></h3>
                 <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias <br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
+                  <i class="bi bi-check-circle-fill"></i> Café da
                   manhã
                   incluso <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
-                  Viagem
+                  <i class="bi bi-check-circle-fill"></i> Transfer <br>
+                  <i class="bi bi-check-circle-fill"></i> Tradutor <br>
+                  <i class="bi bi-check-circle-fill"></i> Seguro Viagem
                 </div>
                 <hr>
-                <div class="preco">
-                  <p class="precoantigo">R$ 1.840,00 </p>
-                  <p class="precopromocional">R$ 1.220,00</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
-                </div>
               </div>
+            </div>            
+            <div class="preco">
+              <p class="precoantigo">R$ 5.800 </p>
+              <p class="precopromocional">R$ 4.500,00</p>
             </div>
+            <div class="d-flex justify-content-center mb-5 ">
+            <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/portodegalinhas.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> <img id="localizacao" src=".../IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Porto de Galinhas - Pernambuco (Ceará)</h5>
-
-                <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 4 dias<br>
-
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
-                  Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
-                  manhã
-                  incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
-                  Viagem
-                </div>
-                <hr>
-                <div class="preco">
-                  <p class="precoantigo">R$ 980,00 </p>
-                  <p class="precopromocional">R$ 840,00</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/Praia-de-Lagoinha.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> <img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Praia de Lagoinha - Florianópolos (Santa Catarina)</h5>
-                <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 3 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
-                  Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
-                  manhã
-                  incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
-                  Viagem
-                </div>
-                <hr>
-                <div class="preco">
-                  <p class="precoantigo">R$ 1.080,00 </p>
-                  <p class="precopromocional">R$ 900,00</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </section>
-
-      <hr>
-      <h2> Que tal esquiar?</h2>
-      <section id="esquiar">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/bariloche.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Bariloche - Argentina</h5>
-
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-2.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Bariloche - Argentina</a></h3>
                 <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
+                  <i class="bi bi-check-circle-fill"></i> Café da
                   manhã
                   incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Tradutor
+                  <i class="bi bi-check-circle-fill"></i> Tradutor
                   <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Transfer
+                  <i class="bi bi-check-circle-fill"></i> Transfer
                   <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
+                  <i class="bi bi-check-circle-fill"></i> Seguro
                   Viagem
 
                 </div>
@@ -192,100 +130,61 @@
                   <p class="precoantigo">R$ 2.340 </p>
                   <p class="precopromocional">R$ 1.500,00</p>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/aspen.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> <img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Aspen - Estados Unidos</h5>
-
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-3.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Santiago - Chile </a></h3>
                 <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
-                  manhã
-                  incluso <br>
-                  <img id="check" src="./IMAGENS/checkmark.png" alt="icone de localização"> Transfer <br>
-                  <img id="check" src="./IMAGENS/checkmark.png" alt="icone de localização"> Tradutor <br>
-                  <img id="check" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro Viagem
-                </div>
-                <hr>
-                <div class="preco">
-                  <p class="precoantigo">R$ 5.800,00 </p>
-                  <p class="precopromocional">R$ 4.500,00</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/santiagochile.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> <img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Santiago - Chile</h5>
-                <p class="card-text">
-                <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
-                  Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
+                  <i class="bi bi-check-circle-fill"></i> Café da
                   manhã
                   incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
+                  <i class="bi bi-check-circle-fill"></i> Tradutor
+                  <br>
+                  <i class="bi bi-check-circle-fill"></i> Transfer
+                  <br>
+                  <i class="bi bi-check-circle-fill"></i> Seguro
                   Viagem
                 </div>
-                </p>
                 <hr>
                 <div class="preco">
                   <p class="precoantigo">R$ 5.430 </p>
                   <p class="precopromocional">R$ 3.200,00</p>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-      </section>
-
-      <hr>
-      <h2> Locais Históricos </h2>
-      <section id="locais-historicos">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/pelourinho.jpg" class="card-img-top" alt="Imagem do Pelourinho em Salvador">
-              <div class="card-body">
-                <h5 class="card-title"> <img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Pelourinho - Salvador (Bahia)</h5>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-4.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Pelourinho - Salvador (Bahia)</a></h3>
                 <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
+                  <i class="bi bi-check-circle-fill"></i> Café da
                   manhã
                   incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Guia
+                  <i class="bi bi-check-circle-fill"></i> Guia
                   Turístico <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
+                  <i class="bi bi-check-circle-fill"></i> Seguro
                   Viagem
                 </div>
                 <hr>
@@ -293,109 +192,239 @@
                   <p class="precoantigo">R$ 2.200,50 </p>
                   <p class="precopromocional">R$ 1.600,00</p>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/quintadaregaleira.jpg" class="card-img-top"
-                alt="Imagem do castelo Quinta da Regaleira">
-              <div class="card-body">
-                <h5 class="card-title"><img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Quinta
-                  da Regaleira - Sintra - Portugal</h5>
-                <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"> Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
-                  manhã
-                  incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Transfer
-                  <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
-                  Viagem<br>
-                </div>
-                <hr>
-                <div class="preco">
-                  <p class="precoantigo">R$ 6.800,00 </p>
-                  <p class="precopromocional">R$ 5.900,00</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./IMAGENS/machupicchu.jpg" class="card-img-top" alt="Imagem de Machu Picchu">
-              <div class="card-body">
-                <h5 class="card-title"><img id="localizacao" src="./IMAGENS/pinodelocalizacao.png"
-                    alt="icone de localização"> Machu
-                  Picchu</h5>
-                <div class="itens">
-                  <img id="localizacao" src="./IMAGENS/calendar.png" alt="icone de localização"> 5 dias<br>
-                  <img id="localizacao" src="./IMAGENS/star.png"
-                    alt="icone de avaliação de hospedagem três estrelas"><img id="localizacao"
-                    src="./IMAGENS/star.png"><img id="localizacao" src="./IMAGENS/star.png">
-                  Hospedagem <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Café da
-                  manhã
-                  incluso<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Transfer
-                  <br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização">
-                  Tradutor<br>
-                  <img id="localizacao" src="./IMAGENS/checkmark.png" alt="icone de localização"> Seguro
-                  Viagem
-                </div>
-                <hr>
-                <div class="preco">
-                  <p class="precoantigo">R$ 299.99 </p>
-                  <p class="precopromocional">R$ 1.220,00</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Reservar</button>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-  </div>
-  </section>
-  </main>
-
-  <footer class="row row-cols-1 row-cols-md-3 g-3" id="rodape">
-    <div class="col">
-      <img id="logo" src="./IMAGENS/logo.png" /><span id="logotxt"> <b>G</b>o<b>T</b>our</span>
+      </div>
     </div>
-    <div id="social" class="col">
-      <img src="./IMAGENS/instagram.png">
-      <img src="./IMAGENS/facebook_174848.png">
-
-    </div>
-
-    <div id="local" class="col">
-      <img src="./IMAGENS/pinodelocalizacao.png" alt="ícone de localização da empresa">
-      <p>Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</p>
-    </div>
-  </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
+  <section id="praia">
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-1.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Praia Brava - Búzios </a></h3>
+                <div class="itens">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  Hospedagem <br>
+                  <i class="bi bi-check-circle-fill"></i> Café da
+                  manhã
+                  incluso<br>
+                  <i class="bi bi-check-circle-fill"></i> Seguro
+                  Viagem
+                </div>
+                <hr>
+                <div class="preco">
+                  <p class="precoantigo">R$ 1.840,00 </p>
+                  <p class="precopromocional">R$ 1.220,00</p>
+                </div>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-2.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Porto de Galinhas</a></h3>
+                  <div class="itens">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  Hospedagem <br>
+                  <i class="bi bi-check-circle-fill"></i> Café da
+                  manhã
+                  incluso<br>
+                  <i class="bi bi-check-circle-fill"></i> Seguro
+                  Viagem
+                </div>
+                <hr>
+                <div class="preco">
+                  <p class="precoantigo">R$ 980,00 </p>
+                  <p class="precopromocional">R$ 840,00</p>
+                </div>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-3.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Praia da Lagoinha</a></h3>
+                 <div class="itens">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  Hospedagem <br>
+                  <i class="bi bi-check-circle-fill"></i> Café da
+                  manhã
+                  incluso<br>
+                  <i class="bi bi-check-circle-fill"></i> Seguro
+                  Viagem
+                </div>
+                <hr>
+                <div class="preco">
+                  <p class="precoantigo">R$ 1.080,00 </p>
+                  <p class="precopromocional">R$ 900,00</p>
+                </div>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="./assets/img/hero-slider-4.jpg" alt="Image" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <h3><a href="#">Joy To Your Journey</a></h3>
+                                <div class="itens">
+                  <i class="bi bi-geo-alt-fill"></i> 5 dias<br>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  Hospedagem <br>
+                  <i class="bi bi-check-circle-fill"></i> Café da
+                  manhã
+                  incluso<br>
+                  <i class="bi bi-check-circle-fill"></i> Seguro
+                  Viagem
+                </div>
+                <hr>
+                <div class="preco">
+                  <p class="precoantigo">R$ 5.430 </p>
+                  <p class="precopromocional">R$ 3.200,00</p>
+                </div>
+                <div class="d-flex justify-content-center mb-5 ">
+                  <a href="./"><button class="btn btn-primary d-flex justify-content-center"> Reservar </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<div class="py-5 cta-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h2 class="mb-2 text-white">Realize sua viagem dos sonhos. Contate-nos</h2>
+					<div class="d-flex justify-content-center"> 
+						<a th:href="@{/contatos}"><button class="btn btn-primary btn btn-outline-white text-white"> Contato </button></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+	
+		<div class="inner first">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<img id="logo" src="./assets/img/logo.png" height="50px" width="50px"/><h3 class="heading">GoTour</h3>
+							
+						</div>
+						<div class="widget">
+							<ul class="list-unstyled social">
+								<li><a href="#"><span class="icon-twitter"></span></a></li>
+								<li><a href="#"><span class="icon-instagram"></span></a></li>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 pl-lg-5">
+						<div class="widget">
+							<h3 class="heading">Páginas</h3>
+							<ul class="links list-unstyled">
+								<li><a href="destinos.html">Destinos</a></li>
+								<li><a href="promocoes.html">Promoções</a></li>
+								<li><a href="contato.html">Contatos</a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2">
+						<div class="widget">
+							<h3 class="heading">Administrativo</h3>
+							<ul class="links list-unstyled">								
+								<li><a href="#">Área Staff</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">Contato</h3>
+							<ul class="list-unstyled quick-info links">
+								<li class="email"><a href="#">gtour@email.com.br</a></li>
+								<li class="phone"><a href="#">+55 (11) 3749-8202</a></li>
+								<li class="address"><a href="#">Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Desenvolvido por: Stéfany Marques <a href="mailto:stefany.marques06@gmail.com"><i class="bi bi-envelope-fill"></i> </a> 
+						<a href="https://github.com/Stephmarquess"><i class="bi bi-github"></i></a>
+						<p>Template por: <a href="https://untree.co" class="link-highlight">Untree.co</a> e <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/jquery.animateNumber.min.js"></script>
+  <script src="./assets/js/jquery.waypoints.min.js"></script>
+  <script src="./assets/js/jquery.fancybox.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/moment.min.js"></script>
+  <script src="./assets/js/daterangepicker.js"></script>
+
+  <script src="./assets/js/typed.js"></script>
+  
+  <script src="./assets/js/custom.js"></script>
 
 </body>
 

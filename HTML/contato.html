@@ -1,116 +1,225 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
 
-  <link rel="stylesheet" href="./CSS/contato.css">
-  <title>GoTour - Contatos </title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="./assets/fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>GoTour - Contato </title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img id="logo" src="./IMAGENS/logo.png" /> <span id="logotxt"> <b>G</b>o<b>T</b>our</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./promocoes.html">Promoções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./destinos.html">Destinos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Contato</a>
-            </li>
 
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><img src="./IMAGENS/lupa.png"
-                alt="icone de lupa para pesquisa" height="20px"></button>
-          </form>
+
+	<header>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+  
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-navigation">
+          <img id="logo" src="./assets/img/logo.png" height="50px" width="50px"/><a href="index.html" class="logo m-0">GoTour <span class="text-primary">.</span></a>
+  
+          <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+					<li><a href="./index.html">Home</a></li>					
+					<li><a href="./promocoes.html">Promoções</a></li>
+					<li><a href="./destinos.html">Destinos</a></li>
+					<li class="active"><a href="#">Contatos</a></li>
+		  </ul>
+  
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+  
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="container">
-
-    <h1> Contato </h1>
-    <section class="row" id="cabecalho">
-      <div class="col-lg-4 col-sm-12" id="info-contato">
-        <img src="./IMAGENS/pinodelocalizacao.png" alt="ícone de localização">
-        <div id="endereco">
-          <p> Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</p>
-        </div>
-        <hr>
-      </div>
-      <div class="col-lg-4 col-sm-12" id="info-contato">
-        <img src="./IMAGENS/telefone.png" alt="ícone de telefone">
-        <div id="telefone">
-          <p> <strong> Atendimento:</strong> <br> (11) 3749-8202 <br>
-            <strong> Administração:</strong> <br> (11) 3749-8000
-          </p>
+  <main>
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Contato</h1>
+            <p class="text-white">Entre em contato conosco.</p>
+          </div>
         </div>
       </div>
-      <hr>
-      <div class="col-lg-4 col-sm-12" id="info-contato">
-        <img src="./IMAGENS/iconeemail.png" alt="ícone de e-mail">
-        <div id="email">
-          <p>gtour@email.com.br</p>
+    </div>
+  </div>
+
+  
+  
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="fname">Nome</label>
+                  <input type="text" class="form-control" id="fname">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="lname">Sobrenome</label>
+                  <input type="text" class="form-control" id="lname">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="text-black" for="email">E-mail</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+              <label class="text-black" for="message">Mensagem</label>
+              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            </div>
+	
+			<div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 ml-auto">
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-house"></span>
+            <address class="text">
+              Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-phone-call"></span>
+            <address class="text">
+              +55 (11) 3749-8202
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-mail"></span>
+            <address class="text">
+              gtour@email.com.br
+            </address>
+          </div>
         </div>
       </div>
-    </section>
-    <hr>
-    <section id="contato-form">
-      <h2 class="mt-5">Entre em contato conosco!</h2>
-      <form id="formulario-contato">
-        <label class="mt-3 form-label">Nome:</label>
-        <input class="form-control" type="text" name="Nome" id="nome" placeholder="Digite o seu nome">
-        <label class="mt-3 form-label ">E-mail:</label>
-        <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu e-mail">
-        <label class="mt-3 form-label">Telefone:</label>
-        <input class="form-control" type="number" name="telefone" id="telefone" placeholder="Digite o seu telefone">
-        <label class="mt-3 form-label">Mensagem: </label>
-        <textarea class="form-control" name="mensagem" id="msg" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-      </form>
-
-
-    </section>
-
-
-  </main>
-
-  <footer class="row row-cols-1 row-cols-md-3 g-3" id="rodape">
-    <div class="col">
-      <img id="logo" src="./IMAGENS/logo.png" /><span id="logotxt"> <b>G</b>o<b>T</b>our</span>
     </div>
-    <div id="social" class="col">
-      <img src="./IMAGENS/instagram.png">
-      <img src="./IMAGENS/facebook.png" style="border-radius: 80%; width: 30px;">
-    </div>
+  </div>
+</main>
+	<footer class="site-footer">
+	
+		<div class="inner first">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<img id="logo" src="./assets/img/logo.png" height="50px" width="50px"/><h3 class="heading">GoTour</h3>
+							
+						</div>
+						<div class="widget">
+							<ul class="list-unstyled social">
+								<li><a href="#"><span class="icon-twitter"></span></a></li>
+								<li><a href="#"><span class="icon-instagram"></span></a></li>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 pl-lg-5">
+						<div class="widget">
+							<h3 class="heading">Páginas</h3>
+							<ul class="links list-unstyled">
+								<li><a href="./destinos">Destinos</a></li>
+								<li><a href="./promocoes">Promoções</a></li>
+								<li><a href="./contatos">Contatos</a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2">
+						<div class="widget">
+							<h3 class="heading">Administrativo</h3>
+							<ul class="links list-unstyled">								
+								<li><a href="#">Área Staff</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">Contato</h3>
+							<ul class="list-unstyled quick-info links">
+								<li class="email"><a href="#">gtour@email.com.br</a></li>
+								<li class="phone"><a href="#">+55 (11) 3749-8202</a></li>
+								<li class="address"><a href="#">Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-    <div id="local" class="col">
-      <img src="./IMAGENS/pinodelocalizacao.png" alt="ícone de localização da empresa" srcset="">
-      <p>Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</p>
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Desenvolvido por: Stéfany Marques <a href="mailto:stefany.marques06@gmail.com"><i class="bi bi-envelope-fill"></i> </a> 
+						<a href="https://github.com/Stephmarquess"><i class="bi bi-github"></i></a>
+						<p>Template por: <a href="https://untree.co" class="link-highlight">Untree.co</a> e <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-  </footer>
+  </div>
+
+  <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/jquery.animateNumber.min.js"></script>
+  <script src="./assets/js/jquery.waypoints.min.js"></script>
+  <script src="./assets/js/jquery.fancybox.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/moment.min.js"></script>
+  <script src="./assets/js/daterangepicker.js"></script>
+
+  <script src="./assets/js/typed.js"></script>
+  
+  <script src="./assets/js/custom.js"></script>
 
 </body>
 

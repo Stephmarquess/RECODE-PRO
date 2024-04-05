@@ -1,120 +1,141 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./CSS/destinos.css">
-  <title>GoTour - Destinos </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="./assets/fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="./assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title> GoTour - Destinos </title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img id="logo" src="./IMAGENS/logo.png" /> <span id="logotxt"> <b>G</b>o<b>T</b>our</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./promocoes.html">Promoções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Destinos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./contato.html">Contato</a>
-            </li>
 
+	<header>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+  
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-navigation">
+          <img id="logo" src="./assets/img/logo.png" height="50px" width="50px"/><a href="index.html" class="logo m-0">GoTour <span class="text-primary">.</span></a>
+  
+          <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+					<li><a href="index.html">Home</a></li>					
+					<li><a href="promocoes.html">Promoções</a></li>
+					<li class="active"><a href="#">Destinos</a></li>
+					<li><a href="contato.html">Contatos</a></li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><img src="./IMAGENS/lupa.png"
-                alt="icone de lupa para pesquisa" height="20px"></button>
-          </form>
+  
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+  
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="container">
-    <h1> Destinos </h1>
-    <h2>Nordeste</h2>
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Destinos</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <section class="row" id="nordeste">
-
-      <div class="col-lg-4">
-        <div class="card-group">
-          <div class="card">
-            <img src="./IMAGENS/jericoacoara.jpg" class="card-img-top"
-              alt="imagem da praia de Jericoacoara">
-            <div class="card-body">
-              <h5 class="card-title">Jericoacoara</h5>
-              <p class="card-text">Jericoacoara fica no município de Jijoca na costa oeste do Ceará a 300 km da capital
-                Fortaleza. Jericoacoara ou simplesmente "Jeri", é um dos destinos mais procurados. Por possuir proteção
-                ambiental, a mobilidade se dá apenas por areia. Possui diversas atividades turísticas como Kitesurf,
-                Windsurf, Wingfoil e com destaque para atrações noturnas como bares e restaurantes com música ao vivo,
-                além de apresentações de música eletrônica.</p>
-
-              <hr>
+    
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-group">
+            <div class="card">
+              <img src="./assets/img/jericoacoara.jpg" class="card-img-top"
+                alt="imagem da praia de Jericoacoara">
+              <div class="card-body">
+                <h5 class="card-title">Jericoacoara</h5>
+                <p class="card-text">Jericoacoara fica no município de Jijoca na costa oeste do Ceará a 300 km da capital
+                  Fortaleza. Jericoacoara ou simplesmente "Jeri", é um dos destinos mais procurados. Por possuir proteção
+                  ambiental, a mobilidade se dá apenas por areia. Possui diversas atividades turísticas como Kitesurf,
+                  Windsurf, Wingfoil e com destaque para atrações noturnas como bares e restaurantes com música ao vivo,
+                  além de apresentações de música eletrônica.</p>  
+                <hr>
+              </div>  
             </div>
-
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="./IMAGENS/beachpark.jpg" class="card-img-top" alt="Imagem do Beach Park">
-          <div class="card-body">
-            <h5 class="card-title">Beach Park</h5>
-            <p class="card-text">
-              Beach Park fica no município de Aquiraz a 27 kilometros da capital Fortaleza. É um dos parques aquáticos
-              mais conhecidos do Brasil. Possui cerca de 20 atrações que vão desde atividades radicais, moderadas e
-              infantis.
-            </p>
-
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="./IMAGENS/fernandodenoronha.jpg" class="card-img-top"
-            alt="Imagem da ilha de Fernando de Noronha">
-          <div class="card-body">
-            <h5 class="card-title">Fernando de Noronha</h5>
-            <p class="card-text">
-              É um arquipélago localizado a 350km do litoral do Nordeste. Possui uma beleza natural exuberante, ideal
-              para quem deseja inspiração, tranquilidade e contato com a natureza. Possui praias pouco urbanizadas,
-              atividades de snorkeling e mergulho com a possibilidade de nadar pertinho dos tubarões e peixes de beleza
-              única.
-            </p>
+  
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./assets/img/beachpark.jpg" class="card-img-top" alt="Imagem do Beach Park">
+            <div class="card-body">
+              <h5 class="card-title">Beach Park</h5>
+              <p class="card-text">
+                Beach Park fica no município de Aquiraz a 27 kilometros da capital Fortaleza. É um dos parques aquáticos
+                mais conhecidos do Brasil. Possui cerca de 20 atrações que vão desde atividades radicais, moderadas e
+                infantis.
+              </p> 
+            </div>  
           </div>
         </div>
+  
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./assets/img/fernandodenoronha.jpg" class="card-img-top"
+              alt="Imagem da ilha de Fernando de Noronha">
+            <div class="card-body">
+              <h5 class="card-title">Fernando de Noronha</h5>
+              <p class="card-text">
+                É um arquipélago localizado a 350km do litoral do Nordeste. Possui uma beleza natural exuberante, ideal
+                para quem deseja inspiração, tranquilidade e contato com a natureza. Possui praias pouco urbanizadas,
+                atividades de snorkeling e mergulho com a possibilidade de nadar pertinho dos tubarões e peixes de beleza
+                única.
+              </p>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+    
+</div>
+</div>
+</div>
 
-      </div>
-    </section>
-    <hr>
-    <section class="row" id="sudeste">
-      <h2>Sul/Sudeste</h2>
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row">
       <div class="col-lg-4">
         <div class="card-group">
           <div class="card">
-            <img src="./IMAGENS/arraialdocabo.png" class="card-img-top"
+            <img src="./assets/img/arraialdocabo.png" class="card-img-top"
               alt="imagem da praia de Jericoacoara">
             <div class="card-body">
               <h5 class="card-title">Arraial do Cabo</h5>
@@ -132,7 +153,7 @@
       </div>
       <div class="col-lg-4">
         <div class="card">
-          <img src="./IMAGENS/gramado.png" class="card-img-top" alt="Imagem do Beach Park">
+          <img src="./assets/img/gramado.png" class="card-img-top" alt="Imagem do Beach Park">
           <div class="card-body">
             <h5 class="card-title">Gramado</h5>
             <p class="card-text">
@@ -150,7 +171,7 @@
       </div>
       <div class="col-lg-4">
         <div class="card">
-          <img src="./IMAGENS/curitiba.png" class="card-img-top"
+          <img src="./assets/img/curitiba.png" class="card-img-top"
             alt="Imagem da ilha de Fernando de Noronha">
           <div class="card-body">
             <h5 class="card-title">Curitiba</h5>
@@ -161,88 +182,174 @@
               belíssimo pôr-do-sol.
             </p>
 
-
-
           </div>
         </div>
       </div>
-    </section>
-    <hr>
-    <section class="row" id="historicos">
-      <h2>Históricos</h2>
-      <div class="col-lg-4">
-        <div class="card-group">
-          <div class="card">
-            <img src="./IMAGENS/paris.jpg" class="card-img-top" alt="imagem da Torre Eiffel em Paris">
-            <div class="card-body">
-              <h5 class="card-title">Paris</h5>
-              <p class="card-text">
-                A capital francesa é um dos destinos mais procurados por casais em lua de mel e também para aqueles que
-                apreciam a cultura. Conhecida como cidade vibrante, charmosa,, divertida e culturalmente rica. A
-                principal atração é a Torre Eiffel, seu principal cartão-postal. Possui atrações para os mais diversos
-                gostos e para todas as idades.
-                As atrações turísticas como Torre Eiffel, Museu do Louvre, Palácio de Versalhes, Catedral de Notre-Dame
-                e Jardim de Luxemburgo são apenas umas das atrações exuberantes que Paris possui.
-              </p>
 
+    </div>
+  </div>
+  </div>
 
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
 
+        <div class="col-lg-4">
+          <div class="card-group">
+            <div class="card">
+              <img src="./assets/img/paris.jpg" class="card-img-top" alt="imagem da Torre Eiffel em Paris">
+              <div class="card-body">
+                <h5 class="card-title">Paris</h5>
+                <p class="card-text">
+                  A capital francesa é um dos destinos mais procurados por casais em lua de mel e também para aqueles que
+                  apreciam a cultura. Conhecida como cidade vibrante, charmosa,, divertida e culturalmente rica. A
+                  principal atração é a Torre Eiffel, seu principal cartão-postal. Possui atrações para os mais diversos
+                  gostos e para todas as idades.
+                  As atrações turísticas como Torre Eiffel, Museu do Louvre, Palácio de Versalhes, Catedral de Notre-Dame
+                  e Jardim de Luxemburgo são apenas umas das atrações exuberantes que Paris possui.
+                </p>
+  
+  
+  
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="./IMAGENS/lisboa.jpg" class="card-img-top" alt="Imagem da cidade de Lisboa">
-          <div class="card-body">
-            <h5 class="card-title">Lisboa</h5>
-            <p class="card-text">
-              A capital Portuguesa tem sido, nos últimos anos, um dos principais destinos dos brasileiros na Europa pelo
-              fato de também ter o o Português como língua nativa. Considerada como um ótimo destino para quem ama
-              explorar culturas, devido á sua forte multiculturalidade e para passeios históricos, entretanto também é
-              uma ótima opção para quem deseja diversão em atividades noturnas.
-            </p>
-
-
-
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./assets/img/lisboa.jpg" class="card-img-top" alt="Imagem da cidade de Lisboa">
+            <div class="card-body">
+              <h5 class="card-title">Lisboa</h5>
+              <p class="card-text">
+                A capital Portuguesa tem sido, nos últimos anos, um dos principais destinos dos brasileiros na Europa pelo
+                fato de também ter o o Português como língua nativa. Considerada como um ótimo destino para quem ama
+                explorar culturas, devido á sua forte multiculturalidade e para passeios históricos, entretanto também é
+                uma ótima opção para quem deseja diversão em atividades noturnas.
+              </p>
+  
+  
+  
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="./IMAGENS/madrid.jpg" class="card-img-top" alt="Imagem da ilha de Fernando de Noronha">
-          <div class="card-body">
-            <h5 class="card-title">Madrid</h5>
-            <p class="card-text">
-              A capital da Espanha é famosa pelos ricos acervos de arte europeia, sendo um roteiro ideal para quem gosta
-              de explorar cultura. O Centro Histórico de Madrid, Palácio Real, Museu do Prado e atrações gastronômicas
-              como o mercado gastronômico de San Miguel, são apenas das muitas atrações que Madrid possui. Sem contar no
-              Tour Bernabéu, estádio do Real Madrid para os amantes de futebol.
-            </p>
-
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./assets/img/madrid.jpg" class="card-img-top" alt="Imagem da ilha de Fernando de Noronha">
+            <div class="card-body">
+              <h5 class="card-title">Madrid</h5>
+              <p class="card-text">
+                A capital da Espanha é famosa pelos ricos acervos de arte europeia, sendo um roteiro ideal para quem gosta
+                de explorar cultura. O Centro Histórico de Madrid, Palácio Real, Museu do Prado e atrações gastronômicas
+                como o mercado gastronômico de San Miguel, são apenas das muitas atrações que Madrid possui. Sem contar no
+                Tour Bernabéu, estádio do Real Madrid para os amantes de futebol.
+              </p>  
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-  </main>
-
-
-
-  <footer class="row row-cols-1 row-cols-md-3 g-3" id="rodape">
-    <div class="col">
-      <img id="logo" src="./IMAGENS/logo.png" /><span id="logotxt"> <b>G</b>o<b>T</b>our</span>
     </div>
-    <div id="social" class="col">
-      <img src="./IMAGENS/instagram.png">
-      <img src="./IMAGENS/facebook.png" style="border-radius: 80%; width: 30px;">
-    </div>
+  </div>
+  </div>
+  
+	<div class="py-5 cta-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h2 class="mb-2 text-white">Realize sua viagem dos sonhos. Contate-nos</h2>
+					<div class="d-flex justify-content-center"> 
+						<a href="contato.html"><button class="btn btn-primary btn btn-outline-white text-white"> Contato </button></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div id="local" class="col">
-      <img src="./IMAGENS/pinodelocalizacao.png" alt="ícone de localização da empresa" srcset="">
-      <p>Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</p>
+	<footer class="site-footer">
+	
+		<div class="inner first">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<img id="logo" src="./assets/img/logo.png" height="50px" width="50px"/><h3 class="heading">GoTour</h3>
+							
+						</div>
+						<div class="widget">
+							<ul class="list-unstyled social">
+								<li><a href="#"><span class="icon-twitter"></span></a></li>
+								<li><a href="#"><span class="icon-instagram"></span></a></li>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 pl-lg-5">
+						<div class="widget">
+							<h3 class="heading font-weight-bold">Páginas</h3>
+							<ul class="links list-unstyled">
+								<li><a href="destinos.html">Destinos</a></li>
+								<li><a href="promocoes.html">Promoções</a></li>
+								<li><a href="contatos">Contatos</a></li>								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2">
+						<div class="widget">
+							<h3 class="heading font-weight-bold">Administrativo</h3>
+							<ul class="links list-unstyled">								
+								<li><a href="#">Área Staff</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading font-weight-bold">Contato</h3>
+							<ul class="list-unstyled quick-info links">
+								<li class="email"><a href="#">gtour@email.com.br</a></li>
+								<li class="phone"><a href="#">+55 (11) 3749-8202</a></li>
+								<li class="address"><a href="#">Praça Roberto Gomes Pedrosa, s/n - Jardim Leonor - São Paulo - SP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Desenvolvido por: Stéfany Marques <a href="mailto:stefany.marques06@gmail.com"><i class="bi bi-envelope-fill"></i> </a> 
+						<a href="https://github.com/Stephmarquess"><i class="bi bi-github"></i></a>
+						<p>Template por: <a href="https://untree.co" class="link-highlight">Untree.co</a> e <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-  </footer>
+  </div>
+
+  <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/jquery.animateNumber.min.js"></script>
+  <script src="./assets/js/jquery.waypoints.min.js"></script>
+  <script src="./assets/js/jquery.fancybox.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/moment.min.js"></script>
+  <script src="./assets/js/daterangepicker.js"></script>
+
+  <script src="./assets/js/typed.js"></script>
+  
+  <script src="./assets/js/custom.js"></script>
 
 </body>
 
